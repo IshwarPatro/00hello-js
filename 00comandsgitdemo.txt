@@ -9,4 +9,7 @@ git push -u origin main
 git remote add origin https://github.com/IshwarPatro/00hellogit.git
 git branch -M main
 git push -u origin main
-
+git status
+<----------for .gitignore-------------->
+git rm -r --cached . 
+git rm --cached filename.txt
