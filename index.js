@@ -43,14 +43,20 @@ console.log(c)
 // For loop in Js
 
 var num=10;
+var i;
 console.log("Print even number 0-10:-")
-for(var i=0;i<=num;i++){
+for(i=0;i<=num;i++){
     if(i%2==0){
         console.log(i);
+        let j=1000;
     }
 }
+console.log("the value of i="+i);
+
+// console.log("the value of i="+j); (j is defined inside the loop thats why we cannot  access the variable j)
 
 // Const
 
 const b=90;
 console.log(b)
+
