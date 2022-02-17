@@ -82,3 +82,4 @@ console.log(Black_Widow.address.city1)
 console.log((Black_Widow.russian_name).toUpperCase())
 // methods-> objects ke andar function
 // console.log(str.toUpperCase());
+console.log("a".toUpperCase())
