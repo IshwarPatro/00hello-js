@@ -32,8 +32,9 @@ let captainAmerica = {
         city: "New York",
         country: "USA",
         phone: 67676,
-        phonenumber: function (){
-            console.log(`${captainAmerica.firstName+" "+captainAmerica.lastName} phone number is ${this.phone}`);
+        phonenumber: function (a,b){
+            console.log(`${captainAmerica.firstName+" "+captainAmerica.lastName} phone number is ${this.phone}`+a+b);
+            console.log(`${captainAmerica.firstName+" "+captainAmerica.lastName} phone number is ${this.phone}  `+(`${this.phone}`*a*b));
         }
     },
     sayHi: function () {
@@ -45,9 +46,39 @@ console.log(captainAmerica);
 console.log(captainAmerica.friends);
 console.log(captainAmerica.friends[0]);
 console.log(captainAmerica.sayHi()); //method accessing 
-console.log(captainAmerica.address.phonenumber());
+console.log(captainAmerica.address.phonenumber(7,9));
+console.table(captainAmerica);
 
 
+// how to access key and it values inside a javascript OBJECT
+console.log("keys and values:-")
 
+for (let a in captainAmerica){
+    console.log(a +"  "+ captainAmerica[a]); 
+    console.log();
+}
+
+let Black_Widow = {
+    firstName:"Natasha",
+    middlename:"Alianovna",
+    lastName:"Romanova",
+    russian_name:"Наталья Алиановна Романов",
+    Age:33,
+    Birthday:"December 3,1984",
+    Sex:"Female",
+    Species:"Unknown",
+    Height:"5'7",
+    Weight:"125lbs",
+    Alignment:"Neutral Good",
+    Citizenship:["Soviet (formerly)","Russian (formerly)","American"],
+    address:{
+        country:"Norway", 
+        city1:"Budapest",
+        city2:"Morocco"
+    }
+}
+
+console.log(Black_Widow.address.city1)
+console.log((Black_Widow.russian_name).toUpperCase())
 // methods-> objects ke andar function
 // console.log(str.toUpperCase());
