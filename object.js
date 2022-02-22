@@ -83,3 +83,28 @@ console.log((Black_Widow.russian_name).toUpperCase())
 // methods-> objects ke andar function
 // console.log(str.toUpperCase());
 console.log("a".toUpperCase())
+
+let car = {
+    name: "Ferrari",
+    model: 2022,
+    startEngine: function () {
+        console.log(`Starting the engine of the car ${this.name}`)
+    }
+}
+
+car.startEngine();
+
+
+// methods-> objects ke andar function
+// console.log(str.toUpperCase());
+
+
+let arr = ["a", "b", 1, true];
+
+let arrr = {
+    0: "a",
+    1: "b",
+    2: 1,
+    3:true
+}
+
