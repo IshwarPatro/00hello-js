@@ -2,6 +2,13 @@ console.log(a);
 
 
 var a=100;
-let b=200;
+var axe = {
+    b : function(a){
+        const x = 10;
+        console.log(x^a)
+    }
+}
 
-console.log(b);
+axe.b(1/10)
+
+
